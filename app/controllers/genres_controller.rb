@@ -19,7 +19,7 @@ class GenresController < ApplicationController
   end
   
   def update
-    
+    @genre = Genre.new(params.require(:genre).permit(:name))
   end
   
 end
