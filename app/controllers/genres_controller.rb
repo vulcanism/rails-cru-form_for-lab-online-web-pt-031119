@@ -19,7 +19,8 @@ class GenresController < ApplicationController
   end
   
   def update
-    @genre = Genre.new(params.require(:genre).permit(:name))
+    @genre = Genre.find(params[:id])
+    
   end
   
 end
