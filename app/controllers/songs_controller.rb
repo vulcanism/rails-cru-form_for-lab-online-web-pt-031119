@@ -5,7 +5,7 @@ class SongsController < ApplicationController
   end
   
   def create
-    @song = Song.new(params.require(:song).permit)
+    @song = Song.new(params.require(:song).permit(:name,))
   end
   
   def show
