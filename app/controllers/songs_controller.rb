@@ -20,4 +20,8 @@ class SongsController < ApplicationController
     
   end
   
+  def index
+    @song = Song.all
+  end
+  
 end
