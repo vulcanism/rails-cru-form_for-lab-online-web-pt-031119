@@ -1,3 +1,3 @@
-ArtistsController < ApplicationController
+class ArtistsController < ApplicationController
 
 end
