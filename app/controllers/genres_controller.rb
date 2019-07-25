@@ -5,7 +5,7 @@ class GenresController < ApplicationController
   end
   
   def create
-    
+    @genre = Genre.new()
   end
   
   def show
